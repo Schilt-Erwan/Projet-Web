@@ -1,0 +1,124 @@
+/* Mise en place d'un background
+*/
+.accueil {
+    height: 600px;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+.ground img{
+    position: absolute;
+    height: 600px;
+    opacity: 0.4;
+    width: 100%;
+    z-index: -1;
+}
+
+/* de ".contenu" à ".pres", modification des textes d'accueil du bde
+*/
+.contenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    height: 100%;
+    font-family: "Inter", sans-serif;
+}
+
+strong {
+    color: #FFEB3B;
+}
+.pres {
+    margin-top: -2px;
+}
+
+/* Style de la section contenant la présentation des évènements
+*/
+.tab_bord{
+    background-color: white;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.tab_bord h2{
+    text-align: center;
+    font-family:'Inter', sans-serif;
+}
+
+.grand_event, .product{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.product{
+    margin-bottom: 100px;
+}
+
+.event, .vente{
+    display: flex;
+    flex-direction: column;
+    border: solid #FFEB3B;
+    border-radius: 30px;
+    width: 350px;
+    text-align: center;
+    font: 600 20px 'Inter', sans-serif;
+    padding-bottom: 50px;
+    gap: 15px;
+}
+
+.event img, .vente img{
+    height: 200px;
+    width: 250px;
+    margin: auto;
+}
+
+.event .ligne, .vente .ligne{
+    border: 1px solid rgba(255, 235, 59, 1);
+    background-color: #ffeb3b;
+    height: 1px;
+    align-items: center;
+    margin: 0 20px 20px;
+}
+
+.event .description, .vente .description{
+    color: #000;
+    text-align: justify; /* Ajustement du texte */
+    align-self: center;
+    margin: 0px 20px;
+    font: 600 20px 'Inter', sans-serif;
+    flex-grow: 1;
+}
+
+.comment{
+    width: 100%;
+    display: f;
+    margin-bottom: -50px;
+    white-space: nowrap;
+    justify-content: center;
+}
+
+.comment img{
+    height: 40px;
+    width: 40px;
+}
+
+button {
+    font-family: 'Inter', sans-serif;
+    border-radius: 50px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    background-color: #fff;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 1024px) {
+    .grand_event, .product {
+        flex-direction: column;
+        align-items: center;
+    }
+}

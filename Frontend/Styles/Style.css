@@ -1,0 +1,147 @@
+body{
+    width: 100%;
+}
+
+header, footer {
+    background-color: #FFEB3B;
+    height: 144px;
+    width: 100%;
+}
+
+.logo_header img{
+    width: 131px;
+    height: 77px;
+    position: absolute;
+    top: 40px;
+    left: 70px;
+}
+
+.utilisateur .user{
+    position: absolute;
+    right: 70px;
+    top: 60px;
+    color: black;
+}
+
+.utilisateur P{
+    padding: 30px;
+    position: absolute;
+    top: 25px;
+    right: 75px;
+    color: black;
+}
+
+header button{
+    background-color: #FFEB3B;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.menu{
+    position: absolute;
+    top: -2px;
+    left: -40px;
+    padding: 5px;
+}
+
+header button:hover ~ .popup{
+    transform: translateX(200px);
+
+}
+
+footer{
+    height: auto;
+    position: relative;
+}
+
+footer img{
+    position: absolute;
+    width: 131px;
+    height: 77px;
+    bottom: 35px;
+    left: 70px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h5{
+    margin-bottom: -1px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+footer a{
+    margin: 5px;
+}
+
+.menuderoulant{
+    height: 60px;
+    list-style: none;
+    padding: 10px;
+    margin: 40px;
+}
+
+.menuderoulant li{
+    float: left;
+    width: 200px;
+    font-family: "Inter", sans-serif;
+}
+
+.menuderoulant li a:link, .menuderoulant li a:visited{
+    display: block;
+    color:black;
+    background: whitesmoke;
+    padding: 6px 10px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.menuderoulant li a:hover {background-color: #FFEB3B;}
+.menuderoulant li a:active {background-color: #FFEB3B;}
+.menuderoulant .sousmenu{
+    list-style-type: none;
+    display: none;
+    padding: 0;
+    margin-top: 20px;
+    position: absolute;
+    border: 1px solid black;
+}
+
+.menuderoulant .sousmenu li {
+    float: none;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+
+.menuderoulant .sousmenu li a:link, .menuderoulant li a:visited {
+    display: block;
+    color: black;
+    text-decoration: none;
+    background-color: whitesmoke;
+}
+
+.menuderoulant .sousmenu li a:hover{
+    background-color: #FFEB3B;    
+}
+
+.menuderoulant li:hover .sousmenu{
+    display: block;
+}
+
+@media screen and (max-width: 1200px) {
+    .utilisateur .user{
+        position: absolute;
+        right: 20px;
+    }
+    .utilisateur p{
+        position: absolute;
+        right: 25px;
+    }
+}
