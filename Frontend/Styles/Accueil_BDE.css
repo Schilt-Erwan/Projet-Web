@@ -27,7 +27,7 @@
 }
 
 strong {
-    color: #FFEB3B;
+    color: #FFE817;
 }
 .pres {
     margin-top: -2px;
@@ -62,7 +62,7 @@ strong {
 .event, .vente{
     display: flex;
     flex-direction: column;
-    border: solid #FFEB3B;
+    border: solid #FFE817;
     border-radius: 30px;
     width: 350px;
     text-align: center;
@@ -78,8 +78,8 @@ strong {
 }
 
 .event .ligne, .vente .ligne{
-    border: 1px solid rgba(255, 235, 59, 1);
-    background-color: #ffeb3b;
+    border: 1px solid #FFE817;
+    background-color: #FFE817;
     height: 1px;
     align-items: center;
     margin: 0 20px 20px;
@@ -116,7 +116,7 @@ button {
     margin-bottom: 5px;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1200px) {
     .grand_event, .product {
         flex-direction: column;
         align-items: center;
